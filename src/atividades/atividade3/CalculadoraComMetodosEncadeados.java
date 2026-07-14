@@ -5,24 +5,29 @@ import java.util.Scanner;
 public class CalculadoraComMetodosEncadeados {
     static Scanner entrada = new Scanner(System.in);
 
-    public static void subtrairNumeros(int x, int y) {
+    public static int subtrairNumeros(int x, int y) {
         int resultado = x - y;
         return resultado;
     }
 
-    public static void imprimirResultado(){
-        System.out.println(subtrairNumeros(10, 5);
+    public static void imprimirResultado(int resultado){
+        System.out.println("O resultado da operação é: " + resultado);
     }
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println();
-        imprimirResultado();
+        System.out.println("Digite o primeiro número:");
+        int x = entrada.nextInt();
 
+        System.out.println("Digite o segundo número:");
+        int y = entrada.nextInt();
 
-
+        int resultado = subtrairNumeros(x, y);
+        imprimirResultado(resultado);
 
         entrada.close();
+
+
     }
 }
