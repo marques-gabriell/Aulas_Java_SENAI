@@ -5,11 +5,17 @@ public class ContaBancaria {
     private String titular;
     private int numeroDaConta;
     private double saldo;
+    private static int contador = 1;
 
-    //Contrutor dessa classe
-    public ContaBancaria(String titular, int numeroDaConta){
+    private void incrementoDeNumero(){
+
+    }
+
+    //metodo Contrutor dessa classe
+    public ContaBancaria(String titular){
         this.titular = titular;
-        this.numeroDaConta = numeroDaConta;
+        this.numeroDaConta = contador;
+        contador++;
         this.saldo = 0.0;
     }
 
