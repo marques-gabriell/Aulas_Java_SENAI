@@ -4,12 +4,6 @@ import aulas.encapsulamento.banco.modelo.ContaBancaria;
 
 public class Main {
     public static void main(String[] args) {
-        ContaBancaria minhaConta = new ContaBancaria("Gabriel", 123456);
-        minhaConta.setTitular("Felipe");
-        System.out.println(minhaConta.getTitular());
-
-        minhaConta.depositar(100);
-
         ContaBancaria pessoa1 = new ContaBancaria("Gabriel");
         ContaBancaria pessoa2 = new ContaBancaria("Marcos");
         ContaBancaria pessoa3 = new ContaBancaria("Isabella");
